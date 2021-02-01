@@ -176,4 +176,9 @@ h3 {
     body {
         font-size: small;
     }
+
+    .video {
+        width: 26.625em;
+        height: 15em;
+    }
 }
