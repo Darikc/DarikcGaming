@@ -9,7 +9,7 @@
 .menu {
 	display: flex;
     justify-content: space-between;
-    font-size: larger;
+    font-size: large;
 }
 
 .menu a {
@@ -18,7 +18,7 @@
 	display: block;
 	text-decoration: none;
 	font-weight: lighter;
-	width: 100%;
+	width: 15%;
 	text-align: center;
 	transition: 0.2s ease all;
 	font-size: 1em;
@@ -27,7 +27,13 @@
 .menu a:hover {
 	background-color: #7F7F81;
     color: #fff;
-    border-radius: 100px;
+    border-radius: 6.25em;
+}
+
+.link {
+    text-decoration: none;
+    color: #2894FA;
+    font-weight: 500;
 }
 
 .menu .twitch {
@@ -41,7 +47,6 @@
 .menu .discord {
     color: #677BC4;
 }
-
 
 /*
  * Estilos generales del Body
@@ -59,10 +64,10 @@ body {
 */
 .contenedor {
     width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
+    max-width: 62.5em;
+    margin: 1.25em auto;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 1.25em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, auto);
 
@@ -70,7 +75,7 @@ body {
         "header header header"
         "widget1 widget1 sidebar"
         "widget1 widget1 sidebar"
-        "widget1 widget1 sidebar"
+        "contenido contenido widget2"
         "contenido contenido widget2"
         "contenido contenido widget2"
         "footer footer footer";
@@ -85,8 +90,8 @@ body {
 .contenedor .sidebar,
 .contenedor .footer{
     background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.25em;
+    border-radius: 0.625em;
 }
 
 /*
@@ -102,11 +107,11 @@ body {
 
 h1 {
     font-weight: lighter;
-    font-size: large;
+    font-size: x-large;
 }
 
 h2 {
-    font-weight: lighter;
+    font-weight: 500;
     font-size: large;
     text-align: center;
 }
@@ -114,6 +119,7 @@ h2 {
 h3 {
     font-weight: 500;
     font-size: large;
+    text-align: center;
 }
 
 .contenedor .contenido{
@@ -137,7 +143,7 @@ h3 {
     display: grid;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
+    min-height: 6.25em;
     grid-area: sidebar;
     color: white;
     font-weight: lighter;
@@ -181,14 +187,18 @@ h3 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (max-width: 1200px){
+    .video {
+        width: 31.25em;
+        height: 20.5rem;
+    }
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (max-width: 992px){
     .video {
-        width: 23.75em;
-        height: 13.5em;
+        width: 21.75em;
+        height: 14.5em;
     }
 }
 
@@ -198,9 +208,9 @@ h3 {
         grid-template-areas: 
             "header header header"
             "widget1 widget1 widget1"
-            "contenido contenido contenido"
-            "contenido contenido contenido"
             "sidebar sidebar sidebar"
+            "contenido contenido contenido"
+            "contenido contenido contenido"
             "widget2 widget2 widget2"
             "footer footer footer";
     }
@@ -216,16 +226,16 @@ h3 {
     }
 
     .video {
-        width: 23.75em;
-        height: 15em;
+        width: 20.75em;
+        height: 13em;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px){
     .video {
-        width: 23.75em;
-        height: 15em;
+        width: 16.75em;
+        height: 10em;
     }
 
 }
