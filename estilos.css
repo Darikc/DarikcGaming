@@ -233,11 +233,21 @@ h3 {
         width: 20.75em;
         height: 13em;
     }
+
+    .video2 {
+        width: 16.75em;
+        height: 10em;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px){
     .video {
+        width: 16.75em;
+        height: 10em;
+    }
+
+    .video2 {
         width: 16.75em;
         height: 10em;
     }
