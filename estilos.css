@@ -200,6 +200,10 @@ h3 {
         width: 21.75em;
         height: 14.5em;
     }
+
+    body {
+        font-size: medium;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -236,6 +240,10 @@ h3 {
     .video {
         width: 16.75em;
         height: 10em;
+    }
+
+    body {
+        font-size: small;
     }
 
 }
