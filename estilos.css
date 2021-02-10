@@ -177,6 +177,8 @@ h5 {
     grid-area: widget1;
     color: black;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedor .widget2{
@@ -184,6 +186,8 @@ h5 {
     grid-area: widget2;
     color: #7F7F81;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedor .footer {
