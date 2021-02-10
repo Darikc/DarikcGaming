@@ -6,6 +6,15 @@
     padding: 0;
 }
 
+/*
+ * Estilos generales del Body
+*/
+body {
+    background: white;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .menu {
 	display: flex;
     justify-content: space-between;
@@ -48,14 +57,7 @@
     color: #677BC4;
 }
 
-/*
- * Estilos generales del Body
-*/
-body {
-    background: white;
-    color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+
 
 /*
  * Estilos para la clase contenedor
@@ -82,7 +84,7 @@ body {
 }
 
 /*
- *
+ * Este estilo es para todos los elementos darles color inical, separcion y bordes redondeados
 */
 .contenedor > div, 
 .contenedor .header,
@@ -91,7 +93,7 @@ body {
 .contenedor .footer{
     background: #ffffff;
     padding: 1.25em;
-    border-radius: 0.625em;
+    border-radius: 20px;
 }
 
 /*
@@ -111,6 +113,7 @@ h1 {
 }
 
 h2 {
+    color: black;
     font-weight: 500;
     font-size: large;
     text-align: center;
@@ -122,13 +125,33 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: #0070E2;
+}
+
+h5 {
+    text-align: justify;
+    color: #F84E60;
+}
+
 .contenedor .contenido{
     grid-area: contenido;
     background: #F5F5F7;
     color: #7F7F81;
-    text-align: justify;
     
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
+
+.contenedor .contenido .parrafo{
+    text-align: justify;
+}
+
+.contenedor .widget2 .parrafo {
+    text-align: justify;
+}
+
 
 /*
  * Aqui utilizamos Flebox ( display: flex; )y CSS GRID
@@ -147,27 +170,19 @@ h3 {
     grid-area: sidebar;
     color: white;
     font-weight: lighter;
-    text-align: center;
-}
-
-
-.contenedor .widget1,
-.contenedor .widget2 {
-    color: black;
-    text-align: center;
-    
 }
 
 .contenedor .widget1{
-    background: #F5F5F7;
+    background: #FCF6F0;
     grid-area: widget1;
-    color: #7F7F81;
+    color: black;
+    text-align: center;
 }
 
 .contenedor .widget2{
-    background: #F5F5F7;
+    background: rgba(251, 251, 251, 0.8);
     grid-area: widget2;
-    color: black;
+    color: #7F7F81;
 }
 
 .contenedor .footer {
@@ -180,29 +195,27 @@ h3 {
 
 .video {
     font-size: large;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 31.25em;
+    height: 20.5rem;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (max-width: 1200px){
     .video {
-        width: 31.25em;
-        height: 20.5rem;
+        width: 27.25em;
+        height: 16.5rem;
     }
-
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (max-width: 992px){
     .video {
-        width: 21.75em;
-        height: 14.5em;
+        width: 18.75em;
+        height: 10.5em;
     }
 
     body {
-        font-size: medium;
+        font-size: 0.875em;
     }
 }
 
@@ -225,18 +238,18 @@ h3 {
         font-weight: bold;
     }
 
-    body {
-        font-size: small;
-    }
-
     .video {
-        width: 20.75em;
-        height: 13em;
+        width: 16.75em;
+        height: 10em;
     }
 
     .video2 {
         width: 16.75em;
         height: 10em;
+    }
+
+    body {
+        font-size: small;
     }
 }
 
@@ -255,5 +268,4 @@ h3 {
     body {
         font-size: small;
     }
-
 }
