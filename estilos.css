@@ -187,9 +187,9 @@ h6 {
 }
 
 .contenedor .widget2 {
-  background: rgba(251, 251, 251, 0.8);
+  background: rgba(174, 203, 217, 0.2);
   grid-area: widget2;
-  color: #7f7f81;
+  color: #3948B1;
   text-align: center;
   align-items: center;
   justify-content: center;
